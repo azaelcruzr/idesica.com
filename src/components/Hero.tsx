@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="flex flex-col xl:flex-row items-center justify-center space-y-2 md:space-y-2 md:space-x-4">
             <div className="bg-brand-blue p-3 shadow-lg flex-shrink-0">
               <Image
-                src="/icons/Automatizacion.webp"
+                src="/icons/automatizacion.webp"
                 alt="Automatización"
                 width={80}
                 height={80}
@@ -50,7 +50,7 @@ export default function Hero() {
           <div className="flex flex-col xl:flex-row items-center justify-center space-y-2 md:space-y-2 md:space-x-4">
             <div className="bg-brand-blue p-3 shadow-lg flex-shrink-0">
               <Image
-                src="/icons/Instrumentacion.webp"
+                src="/icons/instrumentacion.webp"
                 alt="Instrumentación"
                 width={80}
                 height={80}
