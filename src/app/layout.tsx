@@ -1,12 +1,12 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
 import { Roboto_Mono } from "next/font/google";
 
 const robotoMono = Roboto_Mono({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // pesos que necesites
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -21,10 +21,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={robotoMono.className}>
+      <body className={`${robotoMono.className} flex flex-col min-h-screen`}>
         <Navbar />
-        <Hero />
-        <main className="pt-16">{children}</main>
+        {/* El contenido de cada página */}
+        <main className="flex-grow pt-16">{children}</main>
+        <Footer />
       </body>
     </html>
   );

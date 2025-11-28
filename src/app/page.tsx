@@ -1,3 +1,10 @@
-export default function HomePage() {
-  return <main className="flex items-center justify-center h-screen"></main>;
+// src/app/page.tsx
+import Hero from "@/components/Hero";
+
+export default function Home() {
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
